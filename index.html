@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의류 웹사이트 상세 페이지</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <header>
+        <div class="banner">
+            <div class="site-name">YOGINI</div>
+            <div class="login-form">
+                <input type="text" id="username" placeholder="아이디">
+                <input type="password" id="password" placeholder="패스워드">
+                <button onclick="login()">로그인</button>
+                <button onclick="signUp()">회원가입</button>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="navigateCategory('HOME')">HOME</a></li>
+                <li><a href="#" onclick="navigateCategory('TOP')">TOP</a></li>
+                <li><a href="#" onclick="navigateCategory('BOTTOM')">BOTTOM</a></li>
+                <li><a href="#" onclick="navigateCategory('ACC')">ACC</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" id="search" placeholder="S/S신상 밤부 컬렉션을 검색해보세요">
+                <button onclick="searchProduct()">검색</button>
+                <button onclick="viewCart()">장바구니</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- 여기에 상세 페이지 내용을 추가하세요 -->
+    </main>
+    <footer>
+        <p>© 2024 YOGINI</p>
+    </footer>
+    <script>
+        function login() {
+            alert('환영합니다 고객님 ♥︎');
+        }
 
+        function signUp() {
+            alert('회원가입 페이지로 이동합니다');
+        }
+
+        function navigateCategory(category) {
+            alert('해당 카테고리 페이지로 이동합니다');
+        }
+
+        function searchProduct() {
+            alert('제품 검색 기능을 구현합니다');
+        }
+
+        function viewCart() {
+            alert('장바구니 페이지로 이동합니다');
+        }
+    </script>
+</body>
 </html>
