@@ -2,20 +2,22 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #FBF8EF;
 }
 
 header .banner {
-  background-color: #AFD485;
-  color: #ffffff;
+  background-color: #FBF8EF;
+  color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+ 
 }
 
 header .site-name {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -31,7 +33,7 @@ header .login-section button {
   margin: 0 5px;
   padding: 5px 10px;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1px solid #000000;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -44,9 +46,10 @@ nav.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 12px;
   padding: 10px 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #cccccc;
+  background-color: #F5ECCE;
+  border-bottom: 1px solid #000000;
 }
 
 nav.main-nav .category-menu {
@@ -83,13 +86,15 @@ nav.main-nav .search-section button {
   padding: 5px 10px;
   background-color: #000000;
   color: #ffffff;
-  border: 1px solid #cccccc;
+  border: none;
   border-radius: 3px;
   cursor: pointer;
 }
 
 nav.main-nav .search-section button:hover {
-  background-color: #9BC773;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 main .product-detail {
@@ -104,13 +109,11 @@ main .product-image {
 
 main .product-image img {
   max-width: 100%;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
 }
 
 main .product-info {
   flex: 2;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 main .product-info h1 {
@@ -144,7 +147,8 @@ main .price {
 }
 
 main .description, .size-info, .shipping {
-  margin-bottom: 9px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 main .dropdowns {
@@ -154,37 +158,60 @@ main .dropdowns {
 
 main .dropdowns select {
   margin-right: 10px;
-  padding: 5px;
-  border: 1px solid #cccccc;
+  padding: 10px 10px;
+  border: 1px solid #000000;
   border-radius: 3px;
 }
 
-main .buttons {
+main .cart-buy {
   display: flex;
   margin-left: 10px;
 }
 
-main .buttons button {
+main .cart-buy button {
   margin: 0 5px;
-  padding: 10px 20px;
+  padding: 10px 50px;
   background-color: #000000;
   color: #ffffff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
-main .buttons button:hover {
-  background-color: #9BC773;
+main .cart-buy button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   background-color: #f1f1f1;
   border-top: 1px solid #cccccc;
 }
 
 footer p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+    }
+
+    .product-info {
+        margin-left: 0;
+    }
+
+    .cart-buy {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .cart-buy button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
