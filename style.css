@@ -97,10 +97,18 @@ nav.main-nav .search-section button:hover {
   border: 1px solid #000000;
 }
 
-main .product-detail {
+main .product-detail-image {
   display: flex;
   padding: 20px;
   align-items: flex-start;
+}
+
+main .product-main-image {
+  flex: 1;
+}
+
+main .product-main-image img {
+  max-width: 100%;
 }
 
 main .product-main-image {
@@ -192,33 +200,92 @@ main .cart-buy button:hover {
   border: 1px solid #000000;
 }
 
-footer {
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.review-title {
+  font-size: 1.2em;
+}
+
+.custom-hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.review-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars {
+  font-size: 1.5em;
+  color: gold;
+}
+
+.rating-score {
+  font-size: 1.2em;
+}
+
+.related-products {
+  width: 100%;
+  max-width: 800px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.related-gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.related-product-name {
+  font-weight: bold;
+}
+
+.related-product-price {
+  color: #b12704;
+}
+
+.footer-info, .footer-center, .footer-right {
   text-align: center;
-  padding: 5px;
+  padding: 20px;
   background-color: #f1f1f1;
-  border-top: 1px solid #cccccc;
 }
 
-footer p {
-  margin: 0;
+.footer-right input[type="email"] {
+  padding: 5px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 300px;
 }
 
-@media (max-width: 768px) {
-    .product-detail {
-        flex-direction: column;
-    }
+.footer-right button {
+  padding: 5px 10px;
+}
 
-    .product-info {
-        margin-left: 0;
-    }
-
-    .cart-buy {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .cart-buy button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+.footer-right button:first-of-type {
+  margin-bottom: 10px;
 }
