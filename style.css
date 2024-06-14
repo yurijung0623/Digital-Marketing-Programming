@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #FBF8EF;
@@ -30,6 +30,7 @@ header .login-section input[type="password"] {
 }
 
 header .login-section button {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0 5px;
   padding: 5px 10px;
   background-color: #ffffff;
@@ -82,6 +83,7 @@ nav.main-nav .search-section input[type="text"] {
 }
 
 nav.main-nav .search-section button {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0 5px;
   padding: 5px 10px;
   background-color: #000000;
@@ -300,6 +302,7 @@ main .cart-buy button:hover {
 }
 
 .footer-info button, .footer-sub button {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 5px;
   padding: 5px 10px;
   background-color: #000000;
