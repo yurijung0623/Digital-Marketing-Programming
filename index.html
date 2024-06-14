@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +17,6 @@
             </div>
         </div>
     </header>
-
     <nav class="main-nav">
         <ul class="category-menu">
             <li><a href="#" onclick="alert('해당 카테고리 페이지로 이동합니다');">HOME</a></li>
@@ -34,17 +32,16 @@
             <button onclick="alert('장바구니 페이지로 이동합니다');">Cart</button>
         </div>
     </nav>
-
     <main>
         <div class="product-detail">
             <div class="product-main-image">
-                <img src="product.jpg" alt="밤부 코튼 팬츠" width="400">
-            </div>
+                <img src="product-main-image.jpg" alt="밤부 코튼 팬츠" width="400">
+        </div>
             <div class="product-info">
                 <h1>밤부 코튼 팬츠</h1>
                 <div class="reviews">
-                    <span class="stars">★★★★☆</span>
-                    <button onclick="alert('전체 리뷰 페이지로 이동합니다');">(15) 전체 리뷰 보기</button>
+                    <span class="stars">☆☆☆☆☆</span>
+                    <button onclick="alert('전체 리뷰 페이지로 이동합니다');">(0) 전체 리뷰 보기</button>
                 </div>
                 <div class="price">₩ 59,000</div><br>
                 <div class="description">
@@ -96,69 +93,74 @@
                     </div>
                 </div>
             </div>
-        
-        <div class="product-detail-image">
-            <div class="product-info">
-                <!-- 제품 상세 이미지 구간 -->
+
+        </div>
+            <div class="product-info-image">
+                <hr class="custom-hr">
+                <strong>제품 상세 이미지</strong>
+                <hr class="custom-hr">
+                <br />
                 <img src="product-detail-1.jpg" alt="제품 상세 이미지 1" class="product-image">
                 <img src="product-detail-2.jpg" alt="제품 상세 이미지 2" class="product-image">
-                <img src="product-detail-3.jpg" alt="제품 상세 이미지 2" class="product-image">
-            </div>
-            <div id="reviews">
-                <!-- 리뷰 섹션 -->
-                <p class="review-title"><strong>REVIEW (0)</strong></p>
+                <img src="product-detail-3.jpg" alt="제품 상세 이미지 3" class="product-image">
+        </div>
+        
+        </div>
+            <div class="all-reviews">
                 <hr class="custom-hr">
-                <div class="review-rating">
-                    <p class="stars">★★★★☆</p>
-                    <p class="rating-score">4/5</p>
-                </div>
-            </div>
-            <div class="related-products">
-                <h3>다른 고객이 함께 찾은 상품</h3>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="related-product1.jpg" alt="연관 제품 1">
-                        <p class="related-product-name">제품명 1</p>
-                        <p class="related-product-price">₩ 가격 1</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="related-product2.jpg" alt="연관 제품 2">
-                        <p class="related-product-name">제품명 2</p>
-                        <p class="related-product-price">₩ 가격 2</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="related-product3.jpg" alt="연관 제품 3">
-                        <p class="related-product-name">제품명 3</p>
-                        <p class="related-product-price">₩ 가격 3</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="related-product4.jpg" alt="연관 제품 4">
-                        <p class="related-product-name">제품명 4</p>
-                        <p class="related-product-price">₩ 가격 4</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="related-product5.jpg" alt="연관 제품 5">
-                        <p class="related-product-name">제품명 5</p>
-                        <p class="related-product-price">₩ 가격 5</p>
-                    </div>
-                </div>
+                <strong>reviews(0) ☆☆☆☆☆</strong>
+                <hr class="custom-hr">
+                <br />
+                <p>작성된 리뷰가 없습니다!</p>
+                <br />
             </div>
         </div>
-    </main>
 
-    <footer>
+        <div class="related-product">
+            <hr class="custom-hr">
+            <strong>다른 고객이 함께 구매한 상품</strong>
+            <hr class="custom-hr">
+            <br />
+            <div class="related-products-gallery">
+                <div class="related-product-item">
+                    <img src="related-product1.jpg" alt="연관 제품 이미지 1" class="related-product-image">
+                    <div class="related-product-details">
+                        <p class="related-product-name">베이직 코튼 팬츠</p>
+                        <p class="related-product-price">₩59,000</p>
+                    </div>
+                </div>
+                <div class="related-product-item">
+                    <img src="related-product2.jpg" alt="연관 제품 이미지 2" class="related-product-image">
+                    <div class="related-product-details">
+                        <p class="related-product-name">타이다이 민소매</p>
+                        <p class="related-product-price">₩29,000</p>
+                    </div>
+                </div>
+                <div class="related-product-item">
+                    <img src="related-product3.jpg" alt="연관 제품 이미지 3" class="related-product-image">
+                    <div class="related-product-details">
+                        <p class="related-product-name">트임 반소매</p>
+                        <p class="related-product-price">₩39,000</p>
+                    </div>
+                </div>
+            </div>
+        
+    </main>
+ 
+    <hr class="custom-hr">
+        <footer>
         <div class="footer-info">
-            <p>CEO. 정유리 사업자번호. 777-77-77777<br>주소. 서울특별시 성북구 정릉로 77 국민대학교</p>
-        </div>
-        <div class="footer-center">
             <p>© YOGINI</p>
+            <p>CEO : 정유리<br>주소 : 서울특별시 성북구 정릉로 77 국민대학교</p>
+            <button onclick="alert('인스타그램 페이지로 연결합니다');">Instagram</button>
+            <button onclick="alert('유튜브 페이지로 연결합니다');">YouTube</button>
         </div>
-        <div class="footer-right">
-            <button onclick="alert('인스타그램 페이지로 연결합니다');">인스타그램 바로가기</button>
+        <div class="footer-sub"> 
             <p>뉴스레터를 구독하면 신상 알림을 가장 빠르게 알려드려요!</p>
-            <input type="email" placeholder="이메일 입력">
-            <button>구독</button>
+            <input type="email" placeholder="Email">
+            <button onclick="alert('구독 신청이 완료되었습니다');">구독</button>
         </div>
     </footer>
 </body>
+</html>
 </html>
