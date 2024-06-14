@@ -155,7 +155,8 @@ main .reviews .stars {
   color: #000000;
 }
 
-main .reviews button {
+main .review-button {
+  font-size: 13px;
   background-color: transparent;
   border: none;
   color: #585858;

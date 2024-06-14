@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOGINI</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -41,7 +42,7 @@
                 <h1>밤부 코튼 팬츠</h1>
                 <div class="reviews">
                     <span class="stars">☆☆☆☆☆</span>
-                    <button onclick="alert('전체 리뷰 페이지로 이동합니다');">(0) 전체 리뷰 보기</button>
+                    <a href="#all-reviews" class="review-button">(0) 전체 리뷰 보기</a>
                 </div>
                 <div class="price">₩ 59,000</div><br>
                 <div class="description">
@@ -105,15 +106,13 @@
                 <img src="product-detail-3.jpg" alt="제품 상세 이미지 3" class="product-image">
         </div>
         
-        </div>
-            <div class="all-reviews">
-                <hr class="custom-hr">
-                <strong>reviews(0) ☆☆☆☆☆</strong>
-                <hr class="custom-hr">
-                <br />
-                <p>작성된 리뷰가 없습니다!</p>
-                <br />
-            </div>
+        <div id="all-reviews" class="all-reviews">
+            <hr class="custom-hr">
+            <strong>reviews(0) ☆☆☆☆☆</strong>
+            <hr class="custom-hr">
+            <br />
+            <p>작성된 리뷰가 없습니다!</p>
+            <br />
         </div>
 
         <div class="related-product">
@@ -149,12 +148,12 @@
  
     <hr class="custom-hr">
         <footer>
-        <div class="footer-info">
-            <p>© YOGINI</p>
-            <p>CEO : 정유리<br>주소 : 서울특별시 성북구 정릉로 77 국민대학교</p>
-            <button onclick="alert('인스타그램 페이지로 연결합니다');">Instagram</button>
-            <button onclick="alert('유튜브 페이지로 연결합니다');">YouTube</button>
-        </div>
+            <div class="footer-info">
+                <p>© YOGINI</p>
+                <p>CEO : 정유리<br>주소 : 서울특별시 성북구 정릉로 77 국민대학교</p>
+                <button id="instagram-btn">Instagram</button>
+                <button id="youtube-btn">YouTube</button>
+            </div>
         <div class="footer-sub"> 
             <p>뉴스레터를 구독하면 신상 알림을 가장 빠르게 알려드려요!</p>
             <input type="email" placeholder="Email">
